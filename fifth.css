@@ -1,0 +1,37 @@
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    height: 400px;
+}
+
+.carousel-slide {
+    display: flex;
+}
+
+.carousel-image {
+    width: 1200px;
+    height: 800px; 
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+.nav-links li:last-child {
+    margin-right: 0;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+}
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust as necessary based on your navbar height */
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+}
